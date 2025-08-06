@@ -1,7 +1,3 @@
-show databases;
-use ds_july_2025;
-show databases;
-
 create database sql_assign_2025;
 show databases;
 use sql_assign_2025;
