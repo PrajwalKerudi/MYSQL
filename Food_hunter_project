@@ -1,0 +1,41 @@
+
+#  show all the data in the restaurants table
+
+select * from restaurants;
+
+select * from food_items limit 5;
+
+
+# show only the dishes, their prices and the calories in them from the food_items table note: item_name = dishes
+
+select 
+item_name as dishes,
+price,
+calories
+from food_items;
+
+# write code to retrive the order ids, customer ids, and the total prices of all the orders
+
+select * from orders;
+
+select
+order_id,
+customer_id,
+total_price
+from orders;
+
+# write the code to count the number of restaurants in the restaurant table
+
+select count(*) as total_restaurants
+from restaurants;
+
+# write a code to find the unique number of cuisines served by the restaurants from the restaurant table 
+
+select count(distinct cuisine) as uniqe_cuisines  from restaurants;
+
+# write a code to find the unique number of dishes served by the restaurants from the food_item table
+
+select * from food_items;
+
+select count(distinct item_name) as unique_dishes from food_items;
+
